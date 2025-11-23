@@ -1,0 +1,11 @@
+*{background-color: yellow;color:black}
+
+body {
+color: red;
+}
+h1 {
+color: #00f099;
+}
+p.ex {
+color: rgb(0,221,255);
+}
