@@ -1,64 +1,44 @@
-UNICODE <p id="p1">  salksdlsdad  </p>
-ASCII <p id="p2">  salksdlsdad  </p>
-
 <script>
 
-//--- Lesson 04 Demo 01: StringMethods.js ---
 // Single quotes (' '), double quotes (" "), or template literals (``)
 let singleQuotesString = 'Single Quotes String';
 let doubleQuotesString = "Double Quotes String";
-
-let x1=100;
-let templateLiteralString = `Template Literal  ${x1 *2} String`;
-
+let templateLiteralString = `Template Literal String`;
 console.log("Single Quotes String:", singleQuotesString);
 console.log("Double Quotes String:", doubleQuotesString);
 console.log("Template Literal String:", templateLiteralString);
 
 
 // String Objects, Indexing
-let myString = "Hello, World!"; // Declared this variable as it's used later but wasn't initialized at the top
 let myStringObject = new String("Hello, World!");
-
 console.log("String Object:", myStringObject);
 
+
 // Accessing individual characters using indexing
-// Note: The original PDF used myStringLiteral which was not defined. Using myString.
-let firstCharacter = myString[0];
-let lastCharacter = myString[myString.length - 1];
+let firstCharacter = myStringLiteral[0];
+let lastCharacter = myStringLiteral[myStringLiteral.length - 1];
 console.log("First Character:", firstCharacter);
 console.log("Last Character:", lastCharacter);
 
+
 // String Properties
 // Demonstrating string properties
-// Note: The original PDF used myString, assuming it refers to "Hello, World!"
 let stringLength = myString.length;
 let stringConstructor = myString.constructor;
 let stringPrototype = myString.constructor.prototype;
-
 console.log("String Length:", stringLength);
 console.log("String Constructor:", stringConstructor);
 console.log("String Prototype:", stringPrototype);
 
 
-
 // String Methods
-let myString2 = "你好";
 // 1. charAt() - Returns the character at the specified index
-let charAtIndex = myString2.charAt(1);
-console.log("Character at Index 1:", charAtIndex);
+let charAtIndex = myString.charAt(7);
+console.log("Character at Index 7:", charAtIndex);
 
 // 2. charCodeAt() - Returns the Unicode value of the character at the specified index
-let charCodeAtIndex = myString2.charCodeAt(1);
-console.log("Unicode of Character at Index 1:", charCodeAtIndex);
-
-document.getElementById("p1").innerHTML = charCodeAtIndex;
-document.getElementById("p2").innerHTML = charAtIndex;
-
-
-
-
-
+let charCodeAtIndex = myString.charCodeAt(7);
+console.log("Unicode of Character at Index 7:", charCodeAtIndex);
 
 // 3. concat() - Concatenates two or more strings
 let additionalString = " Have a great day!";
@@ -123,20 +103,4 @@ let trimmedString = spacedString.trim();
 console.log("Original String:", spacedString);
 console.log("Trimmed String:", trimmedString);
 
-
-
-
-
-
-
-
 </script>
-
-<body>
-    chinese hello : 
-<p>你好 </p>
-
-
-
-
-</body>
